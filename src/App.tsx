@@ -41,6 +41,7 @@ const App = () => (
               <Route path="/skills" element={<ProtectedRoute><SkillInput /></ProtectedRoute>} />
               <Route path="/results" element={<ProtectedRoute><Results /></ProtectedRoute>} />
               <Route path="/dream-job" element={<ProtectedRoute><DreamJob /></ProtectedRoute>} />
+              <Route path="/career/:careerId" element={<ProtectedRoute><CareerDetail /></ProtectedRoute>} />
               <Route path="/discover-interests" element={<ProtectedRoute><DiscoverInterests /></ProtectedRoute>} />
               <Route path="/skill-assessment" element={<ProtectedRoute><SkillAssessment /></ProtectedRoute>} />
               <Route path="*" element={<NotFound />} />
