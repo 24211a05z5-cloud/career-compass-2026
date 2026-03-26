@@ -15,6 +15,7 @@ import DreamJob from "./pages/DreamJob";
 import CareerDetail from "./pages/CareerDetail";
 import DiscoverInterests from "./pages/DiscoverInterests";
 import SkillAssessment from "./pages/SkillAssessment";
+import SkillQuiz from "./pages/SkillQuiz";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
