@@ -186,7 +186,7 @@ export default function CareerDetail() {
               {companies.map((company) => (
                 <div key={company.name} className="flex items-center justify-between p-4 rounded-lg bg-secondary/50">
                   <span className="font-medium text-sm">{company.name}</span>
-                  <a href={company.applyUrl} target="_blank" rel="noopener noreferrer">
+                  <a href={company.applyUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => { e.stopPropagation(); window.open(company.applyUrl, '_blank', 'noopener,noreferrer'); }}>
                     <Button size="sm" variant="default" className="text-xs">
                       Apply Now <ExternalLink className="h-3 w-3 ml-1" />
                     </Button>
