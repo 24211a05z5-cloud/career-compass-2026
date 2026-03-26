@@ -45,6 +45,7 @@ const App = () => (
               <Route path="/career/:careerId" element={<ProtectedRoute><CareerDetail /></ProtectedRoute>} />
               <Route path="/discover-interests" element={<ProtectedRoute><DiscoverInterests /></ProtectedRoute>} />
               <Route path="/skill-assessment" element={<ProtectedRoute><SkillAssessment /></ProtectedRoute>} />
+              <Route path="/skill-quiz/:skillName" element={<ProtectedRoute><SkillQuiz /></ProtectedRoute>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

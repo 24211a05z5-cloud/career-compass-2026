@@ -109,6 +109,16 @@ export default function SkillInput() {
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-medium">{name}</span>
                   <div className="flex items-center gap-3">
+                    {skillQuizzes[name] && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="h-7 text-xs px-2"
+                        onClick={() => navigate(`/skill-quiz/${encodeURIComponent(name)}`)}
+                      >
+                        <ClipboardCheck className="h-3 w-3 mr-1" /> Assess my level
+                      </Button>
+                    )}
                     <span className="text-sm text-primary font-mono font-bold">{level}/10</span>
                     <button onClick={() => removeSkill(name)} className="text-muted-foreground hover:text-destructive transition-colors">
                       <X className="h-4 w-4" />
