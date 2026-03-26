@@ -91,7 +91,8 @@ export default function Results() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className={`glass-card p-6 ${i === 0 ? "glow-border" : ""}`}
+              className={`glass-card p-6 cursor-pointer hover:ring-1 hover:ring-primary/50 transition-all ${i === 0 ? "glow-border" : ""}`}
+              onClick={() => navigate(`/career/${r.career.id}`)}
             >
               <div className="flex flex-col md:flex-row md:items-start gap-4">
                 <div className="flex-1">
