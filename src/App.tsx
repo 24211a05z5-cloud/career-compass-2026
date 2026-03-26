@@ -12,6 +12,8 @@ import Dashboard from "./pages/Dashboard";
 import SkillInput from "./pages/SkillInput";
 import Results from "./pages/Results";
 import DreamJob from "./pages/DreamJob";
+import DiscoverInterests from "./pages/DiscoverInterests";
+import SkillAssessment from "./pages/SkillAssessment";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
