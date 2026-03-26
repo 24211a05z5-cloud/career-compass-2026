@@ -8,7 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
-import { Plus, X, ArrowRight, ArrowLeft, Sparkles, LogOut } from "lucide-react";
+import { Plus, X, ArrowRight, ArrowLeft, Sparkles, LogOut, ClipboardCheck } from "lucide-react";
+import { skillQuizzes } from "@/data/skillQuizzes";
 
 export default function SkillInput() {
   const { skills, addSkill, removeSkill, updateSkill } = useSkills();
