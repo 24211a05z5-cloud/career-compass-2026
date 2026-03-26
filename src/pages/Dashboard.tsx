@@ -76,6 +76,38 @@ export default function Dashboard() {
               Enter your dream career and discover if it's the right choice for 2026.
             </p>
           </motion.button>
+
+          <motion.button
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4 }}
+            onClick={() => navigate("/discover-interests")}
+            className="glass-card p-8 text-left hover:glow-border transition-all duration-300 group cursor-pointer"
+          >
+            <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+              <Brain className="h-7 w-7 text-primary" />
+            </div>
+            <h2 className="text-xl font-display font-semibold mb-2">Discover My Interests</h2>
+            <p className="text-muted-foreground text-sm">
+              Take a psychometric test to find your ideal career orientation and suitable domains.
+            </p>
+          </motion.button>
+
+          <motion.button
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5 }}
+            onClick={() => navigate("/skill-assessment")}
+            className="glass-card p-8 text-left hover:glow-border transition-all duration-300 group cursor-pointer"
+          >
+            <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
+              <ClipboardCheck className="h-7 w-7 text-accent" />
+            </div>
+            <h2 className="text-xl font-display font-semibold mb-2">Assess My Skills</h2>
+            <p className="text-muted-foreground text-sm">
+              Take a quick quiz to measure your proficiency and add results to your skill list.
+            </p>
+          </motion.button>
         </div>
       </div>
     </div>
