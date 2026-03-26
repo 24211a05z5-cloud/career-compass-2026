@@ -34,6 +34,15 @@ export default function CareerDetail() {
   const navigate = useNavigate();
   const [expandedSkill, setExpandedSkill] = useState<string | null>(null);
 
+  const openExternalLink = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    url: string,
+  ) => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   const career = CAREERS.find((c) => c.id === careerId);
   if (!career) {
     return (
@@ -150,7 +159,7 @@ export default function CareerDetail() {
                               href={res.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              onClick={(e) => { e.stopPropagation(); window.open(res.url, '_blank', 'noopener,noreferrer'); }}
+                              onClick={(e) => openExternalLink(e, res.url)}
                               className="flex items-center justify-between p-3 rounded-lg bg-secondary/30 hover:bg-secondary/60 transition-colors group"
                             >
                               <div>
@@ -186,7 +195,12 @@ export default function CareerDetail() {
               {companies.map((company) => (
                 <div key={company.name} className="flex items-center justify-between p-4 rounded-lg bg-secondary/50">
                   <span className="font-medium text-sm">{company.name}</span>
-                  <a href={company.applyUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => { e.stopPropagation(); window.open(company.applyUrl, '_blank', 'noopener,noreferrer'); }}>
+                  <a
+                    href={company.applyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => openExternalLink(e, company.applyUrl)}
+                  >
                     <Button size="sm" variant="default" className="text-xs">
                       Apply Now <ExternalLink className="h-3 w-3 ml-1" />
                     </Button>
