@@ -49,9 +49,9 @@ const App = () => (
               <Route path="/skill-assessment" element={<ProtectedRoute><SkillAssessment /></ProtectedRoute>} />
               <Route path="/skill-quiz/:skillName" element={<ProtectedRoute><SkillQuiz /></ProtectedRoute>} />
               <Route path="/trending-careers" element={<ProtectedRoute><TrendingCareers /></ProtectedRoute>} />
-              <Route path="/ai-assistant" element={<ProtectedRoute><AIAssistant /></ProtectedRoute>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <FloatingAIAssistant />
           </BrowserRouter>
         </SkillsProvider>
       </AuthProvider>
