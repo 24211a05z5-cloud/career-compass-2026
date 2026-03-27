@@ -45,6 +45,26 @@ const features = [
     iconClass: "text-accent",
     delay: 0.5,
   },
+  {
+    icon: TrendingUp,
+    title: "Trending Careers",
+    emoji: "📈",
+    description: "Explore the most in-demand careers and skills for 2026",
+    route: "/trending-careers",
+    colorClass: "bg-primary/10 group-hover:bg-primary/20",
+    iconClass: "text-primary",
+    delay: 0.6,
+  },
+  {
+    icon: Bot,
+    title: "AI Assistant",
+    emoji: "🤖",
+    description: "Chat with our AI to get career advice and skill recommendations",
+    route: "/ai-assistant",
+    colorClass: "bg-accent/10 group-hover:bg-accent/20",
+    iconClass: "text-accent",
+    delay: 0.7,
+  },
 ];
 
 export default function Dashboard() {
