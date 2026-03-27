@@ -7,6 +7,7 @@ import { getTopCareers, CareerData } from "@/data/careers";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, TrendingUp, Shield, Zap, Sparkles, LogOut, Award } from "lucide-react";
+import CareerInsightsDashboard from "@/components/CareerInsightsDashboard";
 
 function DemandBadge({ demand }: { demand: string }) {
   const color = demand === "High" ? "bg-success/20 text-success" : demand === "Medium" ? "bg-warning/20 text-warning" : "bg-destructive/20 text-destructive";
