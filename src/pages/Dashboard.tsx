@@ -104,7 +104,7 @@ export default function Dashboard() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f) => (
             <motion.button
               key={f.route}
