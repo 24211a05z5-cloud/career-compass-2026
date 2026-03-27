@@ -189,7 +189,9 @@ export default function Results() {
           </p>
         </motion.div>
 
-        <div className="flex gap-3">
+        <CareerInsightsDashboard skills={skills} results={results} />
+
+        <div className="flex gap-3 mt-8">
           <Button variant="outline" onClick={() => navigate("/dashboard")}>
             Back to Dashboard
           </Button>
