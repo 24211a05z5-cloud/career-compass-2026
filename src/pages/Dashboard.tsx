@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/button";
-import { Sparkles, Target, Briefcase, LogOut, Brain, ClipboardCheck, Rocket } from "lucide-react";
+import { Sparkles, Target, Briefcase, LogOut, Brain, ClipboardCheck, Rocket, TrendingUp, Bot } from "lucide-react";
 
 const features = [
   {
